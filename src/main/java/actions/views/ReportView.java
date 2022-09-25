@@ -43,6 +43,11 @@ public class ReportView {
      */
     private String content;
 
+    //出退勤//追記
+    private String start;
+    private String goal;
+
+
     /**
      * 登録日時
      */

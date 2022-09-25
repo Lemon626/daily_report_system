@@ -23,6 +23,8 @@ public class ReportConverter {
                 rv.getReportDate(),
                 rv.getTitle(),
                 rv.getContent(),
+                rv.getStart(),//追記
+                rv.getGoal(),//追記
                 rv.getCreatedAt(),
                 rv.getUpdatedAt());
     }
@@ -44,6 +46,8 @@ public class ReportConverter {
                 r.getReportDate(),
                 r.getTitle(),
                 r.getContent(),
+                r.getStart(),//追記
+                r.getGoal(),//追記
                 r.getCreatedAt(),
                 r.getUpdatedAt());
     }
@@ -74,6 +78,8 @@ public class ReportConverter {
         r.setReportDate(rv.getReportDate());
         r.setTitle(rv.getTitle());
         r.setContent(rv.getContent());
+        r.setStart(rv.getStart());//追記
+        r.setGoal(rv.getGoal());//追記
         r.setCreatedAt(rv.getCreatedAt());
         r.setUpdatedAt(rv.getUpdatedAt());
 

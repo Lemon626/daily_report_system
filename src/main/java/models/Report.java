@@ -82,6 +82,13 @@ public class Report {
     @Column(name = JpaConst.REP_COL_CONTENT, nullable = false)
     private String content;
 
+    //出勤//追記
+    @Column(name = JpaConst.REP_COL_START, nullable = false)
+    private String start;
+    //退勤//追記
+    @Column(name = JpaConst.REP_COL_GOAL, nullable = false)
+    private String goal;
+
     /**
      * 登録日時
      */

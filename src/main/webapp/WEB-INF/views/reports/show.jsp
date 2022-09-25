@@ -24,6 +24,10 @@
                     <td><fmt:formatDate value='${reportDay}' pattern='yyyy-MM-dd' /></td>
                 </tr>
                 <tr>
+                    <th>タイトル</th>
+                    <td><pre><c:out value="${report.title}" /></pre></td>
+                </tr>
+                <tr>
                     <th>内容</th>
                     <td><pre><c:out value="${report.content}" /></pre></td>
                 </tr>
@@ -36,6 +40,14 @@
                     <th>更新日時</th>
                     <fmt:parseDate value="${report.updatedAt}" pattern="yyyy-MM-dd'T'HH:mm:ss" var="updateDay" type="date" />
                     <td><fmt:formatDate value="${updateDay}" pattern="yyyy-MM-dd HH:mm:ss" /></td>
+                </tr>
+                <tr>
+                    <th>出勤時間</th>
+                    <td><pre><c:out value="${report.start}" /></pre></td>
+                </tr>
+                <tr>
+                    <th>退勤時間</th>
+                    <td><pre><c:out value="${report.goal}" /></pre></td>
                 </tr>
             </tbody>
         </table>
